@@ -1,0 +1,39 @@
+body {
+  background: #282828;
+}
+
+#grid {
+  position: relative;
+  width: 60%;
+  margin: 0 auto;
+  /* Clears unordered list default of 40px */
+  padding: 0;
+}
+
+.clear:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+#grid li {
+  list-style-type: none;
+  position: relative;
+  float: left;
+  width: 27.85714285714286%;
+  padding: 0 0 32.16760145166612% 0;
+  transform: rotate(-60deg) skewY(30deg);
+  background: #fd005f;
+  overflow: hidden;
+}
+
+#grid li .hexagon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fdbf00;
+  transform: skewY(-30deg) rotate(60deg);
+}

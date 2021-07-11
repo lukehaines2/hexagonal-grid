@@ -28,9 +28,6 @@ body {
   visibility: hidden;
 }
 
-#grid li * {
-  visibility: visible;
-}
 
 #grid li .hexagon {
   position: absolute;
@@ -41,4 +38,12 @@ body {
   background: #fdbf00;
   transform: skewY(-30deg) rotate(60deg);
   overflow: hidden;
+}
+
+#grid li * {
+  visibility: visible;
+}
+
+#grid li:nth-child(3n+2) {
+  margin: 0 1%;
 }

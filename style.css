@@ -24,8 +24,12 @@ body {
   width: 27.85714285714286%;
   padding: 0 0 32.16760145166612% 0;
   transform: rotate(-60deg) skewY(30deg);
-  background: #fd005f;
   overflow: hidden;
+  visibility: hidden;
+}
+
+#grid li * {
+  visibility: visible;
 }
 
 #grid li .hexagon {
@@ -36,4 +40,5 @@ body {
   height: 100%;
   background: #fdbf00;
   transform: skewY(-30deg) rotate(60deg);
+  overflow: hidden;
 }
